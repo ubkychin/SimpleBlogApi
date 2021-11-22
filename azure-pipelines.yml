@@ -35,9 +35,8 @@ steps:
     
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'JUnit'
+    testResultsFormat: 'XUnit'
     testResultsFiles: '**/TEST-*.xml'
-    failTaskOnFailedTests: true
 
 - task: PublishPipelineArtifact@1
   inputs:
